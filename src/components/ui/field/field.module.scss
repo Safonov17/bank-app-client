@@ -1,0 +1,16 @@
+@import 'src/styles/mixins';
+@import 'src/styles/variables';
+
+.field {
+	display: block;
+	border: 1px solid transparent;
+	border-radius: $radius;
+	background-color: $gray;
+	padding: 12px 20px;
+	margin-bottom: 1.3rem;
+	@include transition(border-color);
+
+	&:focus-within {
+		border-color: rgba($primary, 0.5);
+	}
+}

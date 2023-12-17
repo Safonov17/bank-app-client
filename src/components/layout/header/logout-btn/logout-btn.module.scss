@@ -1,0 +1,24 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.logout {
+	> button {
+		width: 40px;
+		height: 40px;
+		border: none;
+		border-radius: 50%;
+		background-color: $bg-block;
+		color: lighten($color: $text-gray, $amount: 15%);
+		padding: 2px;
+		@include transition(color);
+
+		&:hover {
+			color: $white;
+		}
+
+		> svg {
+			width: 22px;
+			height: 22px;
+		}
+	}
+}
